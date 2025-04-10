@@ -26,7 +26,7 @@
             rainha++;
         } while (rainha < 8);
       
-        //Movendo o cavalo 2 casas para baixo - esquerda usando for;
+        //Movendo o cavalo 2 casas para baixo - esquerda usando for e while;
         printf("\nMovendo o cavalo 2 casas para baixo - esquerda...\n");
         int cavalo = 1;
         while (cavalo--)
