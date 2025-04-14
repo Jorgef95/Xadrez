@@ -1,0 +1,49 @@
+#include <stdio.h>
+    // Jogo de Xadrez - Recursividade
+    // Função para mover a torre recursivamente
+    void moverTorre(int casas) {
+        if (casas > 0) {
+            printf("Direita \n");
+            moverTorre(casas - 1);
+        }
+    }    
+    // Função para mover o bispo recursivamente
+    void moverBispo(int casas) {
+        if (casas > 0) {
+            printf("Diagonal para cima - Direita \n");
+            moverBispo(casas - 1);
+        }
+    }    
+    // Função para mover a Rainha recursivamente
+    void moverRainha(int casas) {
+        if (casas > 0) {
+            printf("Esquerda \n");
+            moverRainha(casas - 1);
+        }
+    }
+    
+    int main() {        
+        // Movendo a Torre 5 casas para a direita usando recursividade
+        printf("\nMovendo a Torre 5 casas para Direita...\n");
+        moverTorre(5);
+    
+        // Movendo o bispo 5 casas na diagonal para cima - direita usando recursividade
+        printf("\nMovendo o bispo 5 casas na diagonal para cima - direita...\n");
+        moverBispo(5);
+    
+        // Movendo a Rainha 8 casas para esquerda usando do-while
+        printf("\nMovendo a Rainha 8 casas para esquerda...\n");
+        moverRainha(8);
+    
+        // Movendo o cavalo 1 casa para cima - direita usando for
+        printf("\nMovendo o cavalo em L 2 casas para cima e 1 direita...\n");
+        for (int i = 0; i < 1; i++) {
+            printf("Cima \n");
+            printf("Cima \n");
+        }
+        printf("Direita\n");
+    
+        return 0;
+    }
+
+   
